@@ -4,6 +4,7 @@ def time(a,sortname):
     from selection import selection
     from insertion import insertion
     from merge import mergeSort
+    from quick import quickSort
     time_start = time.time()
     if sortname == 'Selection':
         selection(a)
@@ -11,6 +12,8 @@ def time(a,sortname):
         insertion(a)
     if sortname == 'Merge':
         mergeSort(a)
+    if sortname == 'Quick':
+        quickSort(a)
     time_end = time.time()
     return (time_end - time_start)
 
@@ -31,6 +34,7 @@ if __name__ == '__main__':
     sortname1 = 'Selection' 
     sortname2 = 'Insertion'
     sortname3 = 'Merge'
+    sortname4 = 'Quick'
     length = 1000
     numberOfArrays = 100
     print("SelectionSort's total time:")
@@ -42,3 +46,5 @@ if __name__ == '__main__':
     print("MergeSort's total time:")
     print(timeRandomInput(sortname3,length,numberOfArrays))
 
+    print("QuickSort's total time:")
+    print(timeRandomInput(sortname4,length,numberOfArrays))
