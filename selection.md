@@ -3,3 +3,24 @@
 ## 选择排序动态图
 ![选择排序.gif](https://github.com/dta0502/Sort-Compare/blob/master/images/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F.gif)
 ## [选择排序的Python实现](https://github.com/dta0502/Sort-Compare/blob/master/selection.py)
+### 1. 辅助函数——exchange()
+```python
+#辅助函数——交换两个数
+def exchange(a,i,j):
+    temp = a[i]
+    a[i] = a[j]
+    a[j] = temp
+```
+
+### 2. 选择排序主函数——selection()
+```python
+#选择排序函数(无返回值)
+def selection(a):
+    length = len(a)
+    for i in range(length):
+        minIndex = i
+        for j in range(i+1,length):
+            if a[j] < a[minIndex]:
+                minIndex = j
+        exchange(a,i,minIndex)
+```
