@@ -5,7 +5,8 @@
 3.算法分析-----[个人博客](https://blog.csdn.net/dta0502/article/details/81410840)
 
 ## [选择排序](https://github.com/dta0502/Sort-Compare/blob/master/selection.py)
-首先，找到数组中最小的那个元素，其次，将它和数组的第一个元素交换位置（如果第一个元素就是最小元素那么它就和自己交换）。再次，在剩下的元素中找到最小的元素，将它与数组的第二个元素交换位置。如此往复，直到将整个数组排序。这种方法叫做选择排序，因为它在不断地选择剩余元素之中的最小者。
+首先，找到数组中最小的那个元素，其次，将它和数组的第一个元素交换位置（如果第一个元素就是最小元素那么它就和自己交换）。再次，在剩下的元素中找到最小的元素，将它与数组的第二个元素交换位置。如此往复，直到将整个数组排序。这种方法叫做选择排序，因为它在不断地选择剩余元素之中的最小者。\
+![选择排序.gif](https://github.com/dta0502/Sort-Compare/blob/master/images/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F.gif)
 
 ### 1. 辅助函数——exchange()
 ```python
@@ -30,7 +31,8 @@ def selection(a):
 ```
 
 ## [插入排序](https://github.com/dta0502/Sort-Compare/blob/master/insertion.py)
-通常人们整理桥牌的方法是一张一张的来，将每一张牌插入到其他已经有序的牌中的适当位置。在计算机的实现中，为了给要插入的元素腾出空间，我们需要将其余所有元素在插入之前都向右移动一位。这种算法叫做插入排序。
+通常人们整理桥牌的方法是一张一张的来，将每一张牌插入到其他已经有序的牌中的适当位置。在计算机的实现中，为了给要插入的元素腾出空间，我们需要将其余所有元素在插入之前都向右移动一位。这种算法叫做插入排序。\
+![插入排序.gif](https://github.com/dta0502/Sort-Compare/blob/master/images/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F.gif)
 ```python
 #插入排序函数
 def insertion(a):
@@ -46,7 +48,8 @@ def insertion(a):
 归并排序体现的是一种**分治思想（Divide and conquer）**，下面是其排序的步骤：\
 1）将数组一分为二（Divide array into two halves）\
 2）对每部分进行递归式地排序（Recursively sort each half）\
-3）合并两个部分（Merge two halves）
+3）合并两个部分（Merge two halves）\
+![归并排序.gif](https://github.com/dta0502/Sort-Compare/blob/master/images/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F.gif)
 
 ### 1. merge()函数：
 具体步骤如下：\
